@@ -53,8 +53,11 @@ app.get('/weather/', (req, res) => {
             clima: forecastData,
             address: req.query.address
         })
+
     })
 })
+
+
 
 
 app.listen(3000, () => {
