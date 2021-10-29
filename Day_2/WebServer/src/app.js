@@ -25,11 +25,17 @@ app.get('/', (req, res) => {
 })
 
 app.get('/help/', (req, res) => {
-    res.sendFile('html/help.html', { root: publicDirectoryPath })
+    res.render('help', {
+        title: 'Help',
+        name: 'Ignacio Moral'
+    })
 })
 
 app.get('/about/', (req, res) => {
-    res.sendFile('html/about.html', { root: publicDirectoryPath })
+    res.render('about', {
+        title: 'About',
+        name: 'Ignacio Moral'
+    })
 })
 
 app.get('/weather/', (req, res) => {

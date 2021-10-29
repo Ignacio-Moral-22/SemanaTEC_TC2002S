@@ -29,6 +29,10 @@ a{
     background-color: rgb(152, 251, 152);
 }
 
-.answers{
+.answers, .text{
     text-align: center;
+}
+
+.text{
+    background-color: blanchedalmond;
 }
